@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/childFrameLayout">
+
+    <!--CardView that holds the elements
+        of the child RecyclerView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <!--Image in the CardView-->
+            <!--Here we have already given
+                the source for the ImageView
+                and we will not assign it
+                in the Java code-->
+            <!--So all the ImageViews will
+                hold the same image-->
+            <ImageView
+                android:id="@+id/img_child_item"
+                android:layout_width="wrap_content"
+                android:padding="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/pjdy"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/img_child_item"
+                android:layout_below="@+id/img_child_item"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:paddingLeft="35dp"
+                android:orientation="vertical">
+
+                <!--Text in the CardView-->
+                <TextView
+                    android:id="@+id/child_item_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:text="sdsadsd"
+                    android:textColor="@android:color/black"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

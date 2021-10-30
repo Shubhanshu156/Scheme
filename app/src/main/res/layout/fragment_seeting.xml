@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SeetingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Change Name"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/updatename"
+            android:layout_marginRight="30dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shape"
+            android:hint="Change Name"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Change Email"
+            android:textColor="@color/black"
+
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/updatemail"
+            android:layout_marginRight="30dp"
+            android:inputType="textEmailAddress"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shape"
+            android:hint="example123@gmail..com"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Change Password"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/updatepassword"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shape"
+            android:hint="Change password"
+
+            android:inputType="textPassword"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Change Gender"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"/>
+
+        <Spinner
+
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        android:layout_marginLeft="20dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_marginRight="20dp"
+        android:spinnerMode="dropdown"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:id="@+id/update"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/purple_500"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

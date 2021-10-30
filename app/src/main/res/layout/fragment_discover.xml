@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/smalllogo"
+        android:id="@+id/smalllogo"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="13dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="13dp"
+        android:text="Find Schemes/Yojna that meet your needs!!"
+        android:id="@+id/about"
+        android:textColor="@android:color/black"
+
+        android:layout_below="@id/smalllogo"
+        android:textSize="22sp"/>
+
+
+        Remove the background and the text. Use hint instead of text
+
+        <EditText
+            android:gravity="center"
+            android:inputType="text"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="Search Scheme name Here"
+            android:layout_below="@+id/about"
+
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/filter"
+            android:layout_width="match_parent"
+            android:background="@drawable/shape"
+            android:layout_height="40dp"/>
+
+    <!-- This is the parent RecyclerView-->
+        <ScrollView
+            android:layout_below="@id/filter"
+            android:paddingTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/about"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/discover_recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.271" />
+        </ScrollView>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

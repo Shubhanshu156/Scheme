@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:id="@+id/scheme_profile"
+        android:src="@drawable/smalllogo"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_below="@id/scheme_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scheme_profile"
+            android:id="@+id/scheme_name"
+            android:text="welcome"
+            android:gravity="left"
+            android:textSize="24sp"
+            android:textColor="@color/black"/>
+        <CheckBox
+            android:button="@android:drawable/btn_star"
+            android:layout_marginLeft="230dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/favorite"
+
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"/>
+        //This one!
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#00ffffff" />
+    </LinearLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout"
+        android:id="@+id/tab_layout"/>
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_layout"
+        android:id="@+id/view_pager2"/>
+
+
+</RelativeLayout>
